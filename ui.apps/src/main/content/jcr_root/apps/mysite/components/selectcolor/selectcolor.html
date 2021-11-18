@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories=['select.color']}"></sly>
+
+
+        <h3>-----------------Select Color Component here-----------------</h3>
+        <sly data-sly-test="${properties.color=='green'}">
+                <p class="green-text italic-text">${properties.text}</p>
+        </sly>
+        <sly data-sly-test="${properties.color=='blue'}">
+                <p class="blue-text bold-text">${properties.text}</p>
+        </sly>
+        <sly data-sly-test="${properties.color=='black'}">
+                <p class="black-text background-color-text">${properties.text}</p>
+        </sly>
+

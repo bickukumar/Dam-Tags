@@ -1,0 +1,2 @@
+#base=js
+clientlib-jquery.js

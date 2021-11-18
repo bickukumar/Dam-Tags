@@ -1,0 +1,16 @@
+<h2>------------------------------Navigation Links as follows------------------------------</h2>
+
+<sly data-sly-use.model="com.mysite.core.models.ImportantLinksModel">
+    <ul data-sly-list="${model.links}">
+<!--        ${item.title}-->
+        <sly data-sly-test="${item.option=='_blank'}">
+            <li><a href="${item.url}" target="_blank">${item.title}</a></li>
+        </sly>
+        <sly data-sly-test="${item.option=='_self'}">
+            <li><a href="${item.url}" target="_self">${item.title}</a></li>
+        </sly>
+    </ul>
+</sly>
+
+
+
